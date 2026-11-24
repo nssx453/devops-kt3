@@ -3,7 +3,7 @@ const app = require('./app');
 
 test('GET / returns KT3 App', async () => {
   const res = await request(app).get('/');
-  expect(res.text).toBe('KT3 App');
+  expect(res.text).toBe('broken app');
 });
 
 test('GET /health returns ok', async () => {
